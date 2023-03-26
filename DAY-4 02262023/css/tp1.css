@@ -1,0 +1,32 @@
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6c6c6c;
+}
+
+
+.contact a{
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-media > .social{
+    margin: 15px;
+    height: 35px;
+    width: 35px;
+    background-color: #03a9f4;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-media > .social > a{ 
+    color: white;
+    font-size: 24px;
+}

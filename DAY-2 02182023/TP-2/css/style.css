@@ -1,0 +1,90 @@
+.parent{
+    border: 1px solid black;
+    height: 250px;
+    position: relative;
+}
+
+
+.child{
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    position: absolute;
+    /*
+    top
+    right
+    bottom
+    left
+    */
+}
+
+
+.connected-user{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(239, 239, 239);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.connected-user > .status{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(191, 191, 191);
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+.connected-user > .status.connected{
+    background-color: rgb(143, 212, 146);
+}
+
+
+.connected-users-list{
+    height: 130px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+
+
+.d-flex{
+    display: flex;
+}
+
+
+.content{
+    width: 150px;
+}
+
+
+.feed-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools{
+    display: flex;
+
+}
+
+.tools  > div{
+    width: 33.33333%;
+    text-align: center;
+}
+
+.feed{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}

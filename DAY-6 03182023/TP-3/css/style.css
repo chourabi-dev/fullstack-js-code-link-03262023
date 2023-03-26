@@ -1,0 +1,40 @@
+.block-chat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+}
+
+.chat-content{
+    display: none;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.chat-bar{
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+
+.chat-row{
+    display: flex;
+    margin-bottom: 15px;
+}
+.chat-row.user{
+    justify-content: end;
+}
+
+.chat-row.pc{
+    justify-content: start;
+}
+
+
+.chat-row > .content{
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    max-width: 80%;
+
+}

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+
+
+.dark-mode{
+    background-color: black;
+}
+
+.dark-mode p{
+    color: white;
+}
+
+.dark-mode h3{
+    color: white;
+}
+
+.dark-mode h1{
+    color: white;
+}
+

@@ -1,0 +1,28 @@
+.bloc{
+    background-color: orange;
+}
+
+
+.bloc > p{
+    color: white;
+}
+
+
+.bloc > h1{
+    color: white;
+}
+
+
+
+.clicked{
+    background-color: yellow !important;
+}
+
+.bloc > p{
+    color: black !important;
+}
+
+
+.bloc > h1{
+    color: black !important;
+}
