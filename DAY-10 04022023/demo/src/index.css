@@ -1,0 +1,28 @@
+.toggle{
+  height: 20px;
+  width: 50px;
+  background-color: grey;
+  border-radius: 30px;
+  position: relative;
+}
+
+.toggle > div{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+
+.toggle.active > div{
+  left: 30px;
+
+}
+
+
+.toggle.active {
+  background-color: greenyellow;
+
+}

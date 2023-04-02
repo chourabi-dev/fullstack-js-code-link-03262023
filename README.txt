@@ -29,3 +29,13 @@ Create new react app
 start the react project 
 
 - npm start
+
+
+
+VISIT npmjs.com
+
+
+
+Add bootstrap
+
+- npm i bootstrap
