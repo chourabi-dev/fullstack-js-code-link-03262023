@@ -1,5 +1,6 @@
 import Article from './componenet/artcile';
 import Forms from './componenet/forms';
+import TodoApp from './componenet/todoApp';
 
 export default function App(){
 
@@ -22,7 +23,13 @@ export default function App(){
 
 
 
-        <Forms />
+        {
+            /**
+             * <Forms />
+             */
+        }
+
+        <TodoApp />
     </div>
     
     );

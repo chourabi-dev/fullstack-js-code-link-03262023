@@ -39,3 +39,23 @@ VISIT npmjs.com
 Add bootstrap
 
 - npm i bootstrap
+
+Add routing
+https://reactrouter.com/en/main
+
+
+install the router using 
+- npm install react-router-dom 
+
+
+
+TEST API USING POSTMAN
+https://www.postman.com/
+
+
+
+
+
+
+
+
