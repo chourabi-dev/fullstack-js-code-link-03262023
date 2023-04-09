@@ -67,7 +67,7 @@ npm install express
 
 
 
-
+npm i -g nodemon
 
 
 
