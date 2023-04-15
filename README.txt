@@ -71,6 +71,13 @@ npm i -g nodemon
 
 
 
+download MONGODB
+
+https://www.mongodb.com/try/download/community
+
+
+add monogoDB to server
+-npm i mongodb
 
 
 
