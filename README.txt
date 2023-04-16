@@ -84,7 +84,14 @@ add monogoDB to server
 
 
 
+add json web token 
+npm i jsonwebtoken
 
+
+
+add cors securoty policy to servers
+
+npm i cors
 
 
 

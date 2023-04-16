@@ -1,9 +1,51 @@
 const express = require('express')
 const url = require('url');
+var jwt = require('jsonwebtoken');
+
+var cors = require('cors')
+
 const { getProductsList, addNewProduct, updateProduct, deleteProduct } = require('./modules/products');
+const { createAccount, auth } = require('./modules/users');
 const app = express()
 const port = 8080
 app.use(express.json());
+
+
+ 
+app.use(cors());
+
+
+// middleware !!
+// we will use the middle ware to test if user is connected or not !!!
+
+
+app.use(function(req,res,next){
+    const token = req.headers.authorization;
+
+
+    if ( req.path === '/api/auth/create-account' || req.path==='/api/auth/connect' ) {
+        next();
+    }else{
+        try {
+            var decoded = jwt.verify(token, 'secret-key-exmpl123');
+            console.log(decoded) // bar
+    
+            next();
+    
+            
+        } catch (error) {
+            res.send({ success:false, message:'Session expired.' })
+        }
+     
+    }
+
+
+})
+
+
+
+
+
 
 
 
@@ -30,8 +72,18 @@ app.get('/api/product/delete',(req,res)=>{
 
 
 // SIGNIN
+app.post('/api/auth/connect',(req,res)=>{
+    auth(req,res);
+})
+
+
 
 // SIGNUP
+app.post('/api/auth/create-account',(req,res)=>{
+    createAccount(req,res);
+})
+
+
 
 
 // starting the server !!!!
